@@ -24,3 +24,9 @@ const MiSaludo = () => {
 };
 
 export default MiSaludo;
+
+
+
+// 1 mini ejercicio: Nuevo componente
+// Crea un nuevo componente llamado MiComponente que muestre un mensaje personalizado y un botón que al hacer clic muestre una alerta con el mensaje "¡Hola desde MiComponente!".
+

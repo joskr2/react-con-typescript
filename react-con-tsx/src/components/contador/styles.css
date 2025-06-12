@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+.color-minimo {
+  color: red;
+}
+
+.color-maximo {
+  color: yellow;
+}
+
+.color-default {
+  color: black;
+}
+
+.counter {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: lightblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.historial-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 90px;
+  overflow-y: auto;
+  width: 100%;
+}
+.historial-lista li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.historial-lista li:last-child {
+  border-bottom: none;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.counter-buttons button {
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.counter-buttons button:disabled {
+  cursor: not-allowed;
+}
+
+.counter-buttons button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.counter-buttons button:active:not(:disabled) {
+  background-color: #3e8e41;
+}
+
+.counter-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+.boton-minimo {
+  background: #f44336;
+  /* Red */
+}
+
+.boton-maximo {
+  background: #ffeb3b;
+  /* Yellow */
+  color: black;
+}
+
+.boton-default {
+  background: #2196F3;
+  /* Blue */
+}
+
+.counter-config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
