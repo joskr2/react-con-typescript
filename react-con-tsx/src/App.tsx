@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MiSaludo from "./components/mi-saludo";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div>
+      <h1>Mi Aplicación</h1>
+      <p>Bienvenido a mi aplicación de ejemplo.</p>
+      <p>
+        Esta aplicación muestra cómo crear y usar componentes en React con
+        TypeScript.
       </p>
-    </>
-  )
-}
-
-export default App
+      <p>
+        En este ejemplo, hemos creado un componente de saludo y un botón
+        personalizado.
+      </p>
+      {/* Aquí puedes agregar otros componentes o contenido que desees mostrar en tu aplicación */}
+      <MiSaludo />
+    </div>
+  );
+};
